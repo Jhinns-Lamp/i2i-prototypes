@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>i2i Prototypes</title>
+<link rel="icon" href="logo.png">
+<style>
+  :root{
+    --pri:#0053DB; --pri-c:#DBE1FF; --ink:#1A1B21; --muted:#5C5B7D;
+    --bg:#F6F7FB; --surface:#FFFFFF; --line:#E3E5EE;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  main{max-width:880px;margin:0 auto;padding:48px 16px 64px}
+  header{display:flex;align-items:center;gap:16px;margin-bottom:36px}
+  header img{width:64px;height:64px}
+  h1{font-size:26px;margin:0 0 4px;letter-spacing:-.01em}
+  header p{margin:0;color:var(--muted);font-size:15px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  a.card{display:flex;flex-direction:column;gap:8px;padding:22px;border-radius:16px;
+    background:var(--surface);border:1px solid var(--line);color:inherit;text-decoration:none;
+    transition:border-color .15s,box-shadow .15s,transform .15s}
+  a.card:hover,a.card:focus-visible{border-color:var(--pri);box-shadow:0 6px 20px rgba(0,83,219,.12);transform:translateY(-2px);outline:none}
+  .tag{align-self:flex-start;font-size:12px;font-weight:600;color:var(--pri);background:var(--pri-c);
+    padding:3px 10px;border-radius:999px}
+  .card h2{font-size:19px;margin:4px 0 0}
+  .card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5;flex:1}
+  .open{margin-top:8px;font-weight:600;color:var(--pri);font-size:14px}
+  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="logo.png" alt="i2i Solidaridad logo">
+    <div>
+      <h1>i2i Palm Oil · Prototypes</h1>
+      <p>Choose an app to open its interactive prototype.</p>
+    </div>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="grower.html">
+      <span class="tag">Mobile app</span>
+      <h2>Grower</h2>
+      <p>For smallholder growers.</p>
+      <span class="open">Open prototype →</span>
+    </a>
+    <a class="card" href="harvest-clerk.html">
+      <span class="tag">Mobile app</span>
+      <h2>Harvest Clerk</h2>
+      <p>For clerks recording harvests in the field.</p>
+      <span class="open">Open prototype →</span>
+    </a>
+    <a class="card" href="cooperative.html">
+      <span class="tag">Mobile app</span>
+      <h2>Cooperative</h2>
+      <p>For cooperative staff.</p>
+      <span class="open">Open prototype →</span>
+    </a>
+    <a class="card" href="admin-web.html">
+      <span class="tag">Web</span>
+      <h2>Admin Web</h2>
+      <p>For administrators, best viewed on a laptop.</p>
+      <span class="open">Open prototype →</span>
+    </a>
+  </div>
+
+  <footer>Prototype for review. Screens and data are illustrative.</footer>
+</main>
+</body>
+</html>
